@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>About | Book Explorer Pro</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom theme (NO blue colors) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#111827',     // Main background
+                        darkcard: '#1f2937',   // Card background
+                        accent: '#d4af37',     // Gold accent
+                        softgray: '#374151'    // Soft gray text
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="appBody" class="bg-darkbg text-white min-h-screen transition-colors duration-500">
+
+    <!-- ================= NAVBAR ================= -->
+   <nav class="w-full bg-darkcard shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+        
+        <h1 class="text-xl font-bold text-accent">Book Explorer Pro</h1>
+
+        <div class="flex items-center gap-6">
+
+            <!-- LINKS -->
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-accent transition">Home</a>
+                <a href="favorites.html" class="text-accent font-semibold">Favorites</a>
+                <a href="about.html" class="hover:text-accent transition">About</a>
+            </div>
+
+            <!-- THEME ICONS -->
+            <div class="flex items-center gap-4">
+
+                <!-- MOON -->
+                <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 
+                    0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 
+                    7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+
+                <!-- SUN -->
+                <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 
+                    6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 
+                    1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 
+                    3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="text-center py-20 px-4">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+            About This Project
+        </h2>
+
+        <p class="text-softgray max-w-3xl mx-auto">
+            Book Explorer Pro is a modern web application built to demonstrate real-world frontend development skills using professional tools, clean architecture, and industry standards.
+        </p>
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+    <section class="max-w-7xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Project Card -->
+        <div class="bg-darkcard p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-bold text-accent mb-4">📚 Project Purpose</h3>
+            <p class="text-softgray leading-relaxed">
+                This application allows users to search for books, explore data from a public API, save favorites using localStorage, and navigate across multiple responsive pages.  
+                It simulates a real production web application structure.
+            </p>
+        </div>
+
+        <!-- Tech Card -->
+        <div class="bg-darkcard p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-bold text-accent mb-4">🛠 Technologies Used</h3>
+            <ul class="text-softgray space-y-2">
+                <li>• HTML5 (Semantic structure)</li>
+                <li>• Tailwind CSS (Utility-first styling)</li>
+                <li>• JavaScript ES6 Modules</li>
+                <li>• Async/Await API integration</li>
+                <li>• DOM manipulation</li>
+                <li>• localStorage persistence</li>
+                <li>• Modular architecture</li>
+            </ul>
+        </div>
+
+        <!-- Developer Card -->
+        <div class="bg-darkcard p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-bold text-accent mb-4">👨‍💻 Developer Vision</h3>
+            <p class="text-softgray leading-relaxed">
+                This project is designed as a portfolio-grade application, not a school exercise.  
+                It focuses on clean structure, scalability, maintainability, and professional coding practices used in real software development environments.
+            </p>
+        </div>
+
+        <!-- Career Card -->
+        <div class="bg-darkcard p-8 rounded-lg shadow">
+            <h3 class="text-2xl font-bold text-accent mb-4">🚀 Career Goal</h3>
+            <p class="text-softgray leading-relaxed">
+                The goal of this project is to build real-world development experience, demonstrate technical ability to employers, and create a strong professional portfolio that supports job opportunities in frontend and web development roles.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-darkcard text-center p-6">
+        <p class="text-softgray text-sm">
+            © 2026 Book Explorer Pro | Built with purpose and professionalism
+        </p>
+    </footer>
+    <script type="module" src="js/theme.js"></script>
+
+</body>
+</html>
